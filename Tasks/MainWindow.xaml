@@ -1,0 +1,24 @@
+﻿<Window x:Class="Tasks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tasks"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="700">
+    <StackPanel Orientation="Vertical">
+        <TextBox></TextBox>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Height="270">
+            <TextBlock Name="Html" TextWrapping="Wrap" HorizontalAlignment="Stretch"></TextBlock>
+        </ScrollViewer>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+            <Button Margin="5 0 5 0" Click="Download" HorizontalAlignment="Stretch">Download Html</Button>
+            <Button Margin="5 0 5 0" Click="DownloadAsync" HorizontalAlignment="Stretch">Download Html Async</Button>
+            <Button Margin="5 0 5 0" Click="ContinueWithChain" HorizontalAlignment="Stretch">Continue With</Button>
+            <Button Margin="5 0 5 0" Click="CalculateAsync" HorizontalAlignment="Stretch">Calculate Async</Button>
+            <Button Margin="5 0 5 0" Click="HandleExceptions" HorizontalAlignment="Stretch">Handle Exceptions</Button>
+            <Button Margin="5 0 5 0" Click="RunInfinitiveLoop" HorizontalAlignment="Stretch">Run Loop</Button>
+            <Button Margin="5 0 5 0" Click="StopInfinitiveLoop" HorizontalAlignment="Stretch">Stop Loop</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
